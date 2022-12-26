@@ -38,6 +38,20 @@ $(document).ready(function(){
         },
     });
 
+    //Scroll
+    $(".scrollBtn").on("click", function (a) {
+        if ("" !== this.$anchor) {
+            var b = $(this);
+            $("html, body").animate(
+                {
+                    scrollTop: $(b.attr("href")).offset().top - 50,
+                },
+                500
+            );
+            a.preventDefault();
+        }
+    });
+
     if (window.matchMedia("(max-width: 991px)").matches){
         $(".footer_links h5").click(function() {
             $(this).next().slideToggle();
