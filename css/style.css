@@ -530,6 +530,61 @@ header .search_container {
     overflow: auto;
   }
 }
+header .search_container .m_search_bar {
+  display: none;
+}
+@media only screen and (max-width: 767px) {
+  header .search_container .m_search_bar {
+    display: block;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  header .search_container .m_search_bar input {
+    width: 100%;
+    border: 2px solid #0f248b;
+    padding: 10px 40px 10px 20px;
+    border-radius: 60px;
+    font-size: 15px;
+    color: #0f248b;
+  }
+  header .search_container .m_search_bar input::-moz-placeholder {
+    color: #0f248b;
+    opacity: 0.6;
+  }
+  header .search_container .m_search_bar input:-ms-input-placeholder {
+    color: #0f248b;
+    opacity: 0.6;
+  }
+  header .search_container .m_search_bar input::placeholder {
+    color: #0f248b;
+    opacity: 0.6;
+  }
+  header .search_container .m_search_bar a {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 14px 30px;
+  }
+}
+@media only screen and (max-width: 767px) and (max-width: 1600px) {
+  header .search_container .m_search_bar a {
+    padding: 10px 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  header .search_container .m_search_bar a img {
+    margin-top: 5px;
+  }
+}
+@media only screen and (max-width: 767px) and (max-width: 1600px) {
+  header .search_container .m_search_bar a img {
+    margin: 0;
+    width: 16px;
+  }
+}
 header .search_container .popular_search {
   margin-bottom: 40px;
 }

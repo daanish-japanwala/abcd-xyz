@@ -598,6 +598,53 @@ header{
             overflow: auto;
         }
 
+        .m_search_bar{
+            display: none;
+
+            @media only screen and (max-width: 767px){
+                display: block;
+                position: relative;
+                margin-bottom: 20px;
+
+                input{
+                    width: 100%;
+                    border: 2px solid $primaryColor;
+                    padding: 10px 40px 10px 20px;
+                    border-radius: 60px;
+                    font-size: 15px;
+                    color: $primaryColor;
+
+                    &::placeholder{
+                        color: $primaryColor;
+                        opacity: 0.6;
+                    }
+                }
+
+                a{
+                    position: absolute;
+                    z-index: 1;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    margin: auto;
+                    padding: 14px 30px;
+    
+                    @media only screen and (max-width: 1600px){
+                        padding: 10px 20px;
+                    }
+    
+                    img{
+                        margin-top: 5px;
+    
+                        @media only screen and (max-width: 1600px){
+                            margin: 0;
+                            width: 16px;
+                        }
+                    }
+                }
+            }
+        }
+
         .popular_search{
             margin-bottom: 40px;
 
