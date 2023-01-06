@@ -218,6 +218,11 @@ img {
   }
 }
 
+.error_msg {
+  font-size: 13px;
+  color: red;
+}
+
 /*************** Header ****************/
 header {
   position: fixed;
@@ -1172,7 +1177,7 @@ header .secondary_nav .m_top_header_links {
 }
 @media only screen and (max-width: 767px) {
   .clearHeight {
-    height: 62px;
+    height: 66px;
   }
 }
 
@@ -2920,6 +2925,16 @@ header .secondary_nav .m_top_header_links {
 .account_compare_section .acc_compare_table {
   margin-top: 70px;
 }
+@media only screen and (max-width: 1600px) {
+  .account_compare_section .acc_compare_table {
+    margin-top: 40px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .account_compare_section .acc_compare_table {
+    margin-top: 20px;
+  }
+}
 .account_compare_section .acc_compare_table table {
   width: 100%;
 }
@@ -2992,6 +3007,214 @@ header .secondary_nav .m_top_header_links {
 }
 .account_compare_section .acc_compare_table table tr td span {
   color: #0f248b;
+}
+.account_compare_section .acc_compare_table.holiday_table table th,
+.account_compare_section .acc_compare_table.holiday_table table td {
+  font-size: 18px;
+  border: 1px solid rgb(233, 233, 233);
+}
+@media only screen and (max-width: 1600px) {
+  .account_compare_section .acc_compare_table.holiday_table table th,
+.account_compare_section .acc_compare_table.holiday_table table td {
+    font-size: 15px;
+  }
+}
+.account_compare_section .acc_compare_table.holiday_table table th {
+  padding: 15px;
+  font-weight: bold;
+}
+.account_compare_section .acc_compare_table.holiday_table table tr td {
+  padding: 15px;
+  vertical-align: top;
+}
+
+/*********** Accordion *************/
+.dcb_accordion .accordion .accordion-item:first-of-type {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.dcb_accordion .accordion .accordion-item:first-of-type .accordion-button {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.dcb_accordion .accordion .accordion-item:last-of-type {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.dcb_accordion .accordion .accordion-item:last-of-type .accordion-collapse {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.dcb_accordion .accordion .accordion-item:last-of-type .accordion-button.collapsed {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.dcb_accordion .accordion .accordion-item .accordion-header .accordion-button {
+  font-size: 22px;
+  padding: 40px 60px;
+}
+@media only screen and (max-width: 1600px) {
+  .dcb_accordion .accordion .accordion-item .accordion-header .accordion-button {
+    font-size: 18px;
+    padding: 20px;
+  }
+}
+.dcb_accordion .accordion .accordion-item .accordion-header .accordion-button:focus {
+  border: 0;
+  box-shadow: none;
+}
+.dcb_accordion .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+  color: #fff;
+  background: #0f248b;
+  box-shadow: none;
+}
+.dcb_accordion .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+}
+.dcb_accordion .accordion .accordion-item .accordion-body {
+  border-top: 1px solid rgb(233, 233, 233);
+  padding: 60px;
+}
+@media only screen and (max-width: 1600px) {
+  .dcb_accordion .accordion .accordion-item .accordion-body {
+    padding: 30px;
+  }
+}
+
+.upcoming_holidays {
+  background: #fff;
+  padding: 30px;
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+}
+@media only screen and (max-width: 1600px) {
+  .upcoming_holidays {
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .upcoming_holidays {
+    margin-bottom: 30px;
+  }
+}
+.upcoming_holidays h3 {
+  font-size: 25px;
+  font-weight: bold;
+}
+@media only screen and (max-width: 1600px) {
+  .upcoming_holidays h3 {
+    font-size: 20px;
+  }
+}
+.upcoming_holidays ul {
+  margin-top: 40px;
+}
+.upcoming_holidays ul li {
+  border-bottom: 1px solid rgb(233, 233, 233);
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+}
+.upcoming_holidays ul li:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.upcoming_holidays ul li .calendar_date {
+  float: right;
+  width: 70px;
+  text-align: center;
+  color: #0f248b;
+  background: #f9df4b;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.upcoming_holidays ul li .calendar_date span {
+  display: block;
+  color: #0f248b;
+  font-weight: bold;
+  line-height: normal;
+}
+.upcoming_holidays ul li h5 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 1600px) {
+  .upcoming_holidays ul li h5 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+}
+.upcoming_holidays ul li span {
+  font-size: 15px;
+  color: #a3a3a3;
+}
+@media only screen and (max-width: 1600px) {
+  .upcoming_holidays ul li span {
+    font-size: 12px;
+  }
+}
+
+/*********** Locator ****************/
+.locator_section {
+  padding: 0 0 5%;
+  margin-top: -60px;
+}
+.locator_section .card_section_tabs {
+  margin-top: 0;
+}
+.locator_section .card_section_tabs .card_section_tabs_btns ul li {
+  display: inline-block;
+  margin: 0;
+}
+.locator_section .card_section_tabs .card_section_tabs_btns ul li button {
+  padding: 50px;
+}
+.locator_section .card_section_tabs .card_section_tabs_content .locator_tab_div .locator_dd {
+  margin-bottom: 50px;
+}
+.locator_section .card_section_tabs .card_section_tabs_content .locator_tab_div .locator_dd select {
+  width: 100%;
+  padding: 15px 20px;
+  border: 1px solid #cdcdcd;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  background: url("../images/dd-arrow.png") no-repeat center right 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.locator_section .card_section_tabs .card_section_tabs_content .locator_tab_div .locator_dd select:hover, .locator_section .card_section_tabs .card_section_tabs_content .locator_tab_div .locator_dd select:focus {
+  border: 1px solid #0f248b;
+}
+.locator_section .card_section_tabs .card_section_tabs_content .locator_tab_div .locator_result table {
+  width: 100%;
+}
+.locator_section .card_section_tabs .card_section_tabs_content .locator_tab_div .locator_result table th,
+.locator_section .card_section_tabs .card_section_tabs_content .locator_tab_div .locator_result table td {
+  padding: 20px 30px;
+  vertical-align: middle;
+  font-size: 18px;
+  border: 1px solid rgb(233, 233, 233);
+}
+@media only screen and (max-width: 1600px) {
+  .locator_section .card_section_tabs .card_section_tabs_content .locator_tab_div .locator_result table th,
+.locator_section .card_section_tabs .card_section_tabs_content .locator_tab_div .locator_result table td {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .locator_section .card_section_tabs .card_section_tabs_content .locator_tab_div .locator_result table th,
+.locator_section .card_section_tabs .card_section_tabs_content .locator_tab_div .locator_result table td {
+    vertical-align: top;
+  }
+}
+.locator_section .card_section_tabs .card_section_tabs_content .locator_tab_div .locator_result table th {
+  font-weight: 400;
+  color: #0f248b;
+}
+.locator_section .card_section_tabs .card_section_tabs_content .locator_tab_div .locator_result table tr td {
+  vertical-align: top;
 }
 
 /************* Footer ***************/
