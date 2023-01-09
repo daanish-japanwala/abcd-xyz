@@ -77,7 +77,7 @@
 
         <div class="search_container" id="searchDD">
             <div class="m_search_bar">
-                <input type="text" name="Search" placeholder="Search for DCB Products, Services & More...">
+                <input type="text" name="Search" placeholder="Search">
                 <a href="#"><img src="images/search.png" alt=""></a>
             </div>
             <div class="popular_search">
@@ -357,7 +357,7 @@
         <div class="hero_content_box">
             <div class="container">
                 <div class="hero_content">
-                    <h2>Saving accounts <b>made for everyone</b> and every type of need</h2>
+                    <h2>Branch & ATM Locator</h2>
                 </div>
             </div>
         </div>
@@ -369,255 +369,286 @@
 </section>
 <!-- Inner Banner Ends -->
 
-<!-- Account Types Btn Starts -->
-<section class="acc_type_btns">
+<!-- Locate Starts -->
+<section class="acc_type_btns alt_tabs">
     <div class="container">
-        <div class="acc_type_btns_box">
-            <div class="row">
-                <div class="col-lg-2 col-4">
-                    <a class="scrollBtn" href="#eliteAccount">
+        <div class="acc_type_btns_box locate_tabs">
+            <div class="row" role="tablist">
+                <div class="col-lg-6 col-6">
+                    <a class="scrollBtn active" href="javascript:;" data-bs-toggle="tab" data-bs-target="#branchLocatorTab">
                         <span>
-                            <img src="images/saving-account/elite.png" alt="">
-                            <img src="images/saving-account/elite-active.png" alt="">
+                            <img src="images/branch.png" alt="">
+                            <img src="images/branch-active.png" alt="">
                         </span>
-                        <span>Elite</span>
+                        <span>Branch</span>
                     </a>
                 </div>
-                <div class="col-lg-2 col-4">
-                    <a class="scrollBtn" href="#premiumAccount">
+                <div class="col-lg-6 col-6">
+                    <a class="scrollBtn" href="javascript:;" data-bs-toggle="tab" data-bs-target="#atmLocatorTab">
                         <span>
-                            <img src="images/saving-account/premium.png" alt="">
-                            <img src="images/saving-account/premium-active.png" alt="">
+                            <img src="images/atm.png" alt="">
+                            <img src="images/atm-active.png" alt="">
                         </span>
-                        <span>Premium</span>
+                        <span>ATM</span>
                     </a>
                 </div>
-                <div class="col-lg-2 col-4">
-                    <a class="scrollBtn" href="#privilageAccount">
-                        <span>
-                            <img src="images/saving-account/privilage.png" alt="">
-                            <img src="images/saving-account/privilage-active.png" alt="">
-                        </span>
-                        <span>Privilage</span>
-                    </a>
-                </div>
-                <div class="col-lg-2 col-4">
-                    <a class="scrollBtn" href="#cashbackAccount">
-                        <span>
-                            <img src="images/saving-account/cashback.png" alt="">
-                            <img src="images/saving-account/cashback-active.png" alt="">
-                        </span>
-                        <span>Cashback</span>
-                    </a>
-                </div>
-                <div class="col-lg-2 col-4">
-                    <a class="scrollBtn" href="#basicAccount">
-                        <span>
-                            <img src="images/saving-account/basic.png" alt="">
-                            <img src="images/saving-account/basic-active.png" alt="">
-                        </span>
-                        <span>Basic</span>
-                    </a>
-                </div>
-                <div class="col-lg-2 col-4">
-                    <a class="scrollBtn" href="#classicAccount">
-                        <span>
-                            <img src="images/saving-account/classic.png" alt="">
-                            <img src="images/saving-account/classic-active.png" alt="">
-                        </span>
-                        <span>Classic</span>
-                    </a>
+            </div>
+        </div>
+
+        <div class="account_compare_section locator_section bg-transparent">
+            <div class="tab-content">
+                <div class="card_section_tabs">
+                    <div class="card_section_tabs_content">
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="branchLocatorTab">
+                                <div class="locator_tab_div">
+                                    <div class="locator_dd">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-sm-4">
+                                                <select name="" id="">
+                                                    <option value="">Select State</option>
+                                                    <option value="">Option 01</option>
+                                                    <option value="">Option 02</option>
+                                                    <option value="">Option 03</option>
+                                                    <option value="">Option 04</option>
+                                                    <option value="">Option 05</option>
+                                                </select>
+                                                <span class="error_msg"></span>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-4">
+                                                <select name="" id="">
+                                                    <option value="">Select City</option>
+                                                    <option value="">Option 01</option>
+                                                    <option value="">Option 02</option>
+                                                    <option value="">Option 03</option>
+                                                    <option value="">Option 04</option>
+                                                    <option value="">Option 05</option>
+                                                </select>
+                                                <span class="error_msg"></span>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-4">
+                                                <select name="" id="">
+                                                    <option value="">Select Branch</option>
+                                                    <option value="">Option 01</option>
+                                                    <option value="">Option 02</option>
+                                                    <option value="">Option 03</option>
+                                                    <option value="">Option 04</option>
+                                                    <option value="">Option 05</option>
+                                                </select>
+                                                <span class="error_msg"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="locator_result">
+                                        <div class="table-responsive">
+                                            <table>
+                                                <tr>
+                                                    <th valign="top">Branch Location</th>
+                                                    <td valign="top">Andheri - W</td>
+                                                </tr>
+                                                <tr>
+                                                    <th valign="top">Address</th>
+                                                    <td valign="top">19, S.V. Road Mumbai</td>
+                                                </tr>
+                                                <tr>
+                                                    <th valign="top">Landmark</th>
+                                                    <td valign="top">Opposite Andheri Subway</td>
+                                                </tr>
+                                                <tr>
+                                                    <th valign="top">Pin Code</th>
+                                                    <td valign="top">400058</td>
+                                                </tr>
+                                                <tr>
+                                                    <th valign="top">IFS Code</th>
+                                                    <td valign="top">DCBL0000004</td>
+                                                </tr>
+                                                <tr>
+                                                    <th valign="top">Tel</th>
+                                                    <td valign="top">7304500401 / 02, 7304500403 / 04, 7304500405 / 06, 7304500407 / 08</td>
+                                                </tr>
+                                                <tr>
+                                                    <th valign="top">ATM</th>
+                                                    <td valign="top">Yes</td>
+                                                </tr>
+                                                <tr>
+                                                    <th valign="top">Locker</th>
+                                                    <td valign="top">Yes</td>
+                                                </tr>
+                                                <tr>
+                                                    <th valign="top">Branch Timing</th>
+                                                    <td valign="top">
+                                                    <strong>Monday to Saturday</strong> 9.30 am to 4.00 pm<br>
+                                                    Closed 2nd & 4th Saturday</td>
+                                                </tr>
+                                                <tr>
+                                                    <th valign="top">Branch Head</th>
+                                                    <td valign="top">Sonal Bhayani</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="atmLocatorTab">
+                                <div class="locator_tab_div">
+                                    <div class="locator_dd">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-sm-4">
+                                                <select name="" id="">
+                                                    <option value="">Select State</option>
+                                                    <option value="">Option 01</option>
+                                                    <option value="">Option 02</option>
+                                                    <option value="">Option 03</option>
+                                                    <option value="">Option 04</option>
+                                                    <option value="">Option 05</option>
+                                                </select>
+                                                <span class="error_msg"></span>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-4">
+                                                <select name="" id="">
+                                                    <option value="">Select City</option>
+                                                    <option value="">Option 01</option>
+                                                    <option value="">Option 02</option>
+                                                    <option value="">Option 03</option>
+                                                    <option value="">Option 04</option>
+                                                    <option value="">Option 05</option>
+                                                </select>
+                                                <span class="error_msg"></span>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-4">
+                                                <select name="" id="">
+                                                    <option value="">Select Location</option>
+                                                    <option value="">Option 01</option>
+                                                    <option value="">Option 02</option>
+                                                    <option value="">Option 03</option>
+                                                    <option value="">Option 04</option>
+                                                    <option value="">Option 05</option>
+                                                </select>
+                                                <span class="error_msg"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="row">
+                                        <div class="col-lg-4 mb-4">
+                                            <div class="locator_result atm_cards">
+                                                <div class="table-responsive">
+                                                    <table>
+                                                        <tr>
+                                                            <th valign="top">ATM Location</th>
+                                                            <td valign="top">Andheri</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th valign="top">Address</th>
+                                                            <td valign="top">Laram Shopping Centre, S.V. Road, Andheri - W, Mumbai</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th valign="top">Pin Code</th>
+                                                            <td valign="top">400058</td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 mb-4">
+                                            <div class="locator_result atm_cards">
+                                                <div class="table-responsive">
+                                                    <table>
+                                                        <tr>
+                                                            <th valign="top">ATM Location</th>
+                                                            <td valign="top">Andheri</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th valign="top">Landmark</th>
+                                                            <td valign="top">Opposite Andheri Subway</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th valign="top">Address</th>
+                                                            <td valign="top">19, SV Road, Opp Andheri Subway, Andheri(W) Mumbai</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th valign="top">Pin Code</th>
+                                                            <td valign="top">400058</td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 mb-4">
+                                            <div class="locator_result atm_cards">
+                                                <div class="table-responsive">
+                                                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="locatetable">
+                                                        <tr>
+                                                            <th valign="top">ATM Location</th>
+                                                            <td valign="top">Andheri</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th valign="top">Address</th>
+                                                            <td valign="top">4/5 Apna Ghar, Swami Samarth Nagar, Andheri - W, Mumbai</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th valign="top">Pin Code</th>
+                                                            <td valign="top">400053</td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 mb-4">
+                                            <div class="locator_result atm_cards">
+                                                <div class="table-responsive">
+                                                    <table>
+                                                        <tr>
+                                                            <th valign="top">ATM Location</th>
+                                                            <td valign="top">Andheri</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th valign="top">Address</th>
+                                                            <td valign="top">Laram Shopping Centre, S.V. Road, Andheri - W, Mumbai</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th valign="top">Pin Code</th>
+                                                            <td valign="top">400058</td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 mb-4">
+                                            <div class="locator_result atm_cards">
+                                                <div class="table-responsive">
+                                                    <table>
+                                                        <tr>
+                                                            <th valign="top">ATM Location</th>
+                                                            <td valign="top">Andheri</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th valign="top">Landmark</th>
+                                                            <td valign="top">Opposite Andheri Subway</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th valign="top">Address</th>
+                                                            <td valign="top">19, SV Road, Opp Andheri Subway, Andheri(W) Mumbai</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th valign="top">Pin Code</th>
+                                                            <td valign="top">400058</td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- Account Types Btn Ends -->
-
-<!-- Account Type Section Starts -->
-<div class="container">
-    <section class="acc_type_section elite_section" id="eliteAccount">
-        <div class="row">
-            <div class="col-lg-7">
-                <h3><span>DCB Elite</span> Savings Account</h3>
-                <p>This account lets you choose your lucky number, or any number of your choice as your bank account number. You have the option of choosing the last 8 digits of your 14 digit account number.</p>
-                <div class="acc_type_section_btns">
-                    <a class="outline_btn" href="#">Know more</a>
-                    <a class="filled_btn" href="#">Get Started<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z" data-name="Arrow"></path></svg></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="acc_type_section premium_section" id="premiumAccount">
-        <div class="row justify-content-end">
-            <div class="col-lg-7">
-                <h3><span>DCB Premium</span> Savings Account</h3>
-                <p>Formerly known as DCB Shubh-Labh Savings Account. A savings account that rewards you with each transaction. At DCB Bank, we believe that opening an account is not  just an activity</p>
-                <div class="acc_type_section_btns">
-                    <a class="outline_btn" href="#">Know more</a>
-                    <a class="filled_btn" href="#">Get Started<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z" data-name="Arrow"></path></svg></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="acc_type_section privilage_section" id="privilageAccount">
-        <div class="row">
-            <div class="col-lg-7">
-                <h3><span>DCB Privilage</span> Savings Account</h3>
-                <p>Get maximum flexibility with maximum returns. This account gives you complete convenience and allows you to maintain the required balance of Rs. 5 lakh in any combination across your savings account.</p>
-                <div class="acc_type_section_btns">
-                    <a class="outline_btn" href="#">Know more</a>
-                    <a class="filled_btn" href="#">Get Started<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z" data-name="Arrow"></path></svg></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="acc_type_section cashback_section" id="cashbackAccount">
-        <div class="row justify-content-end">
-            <div class="col-lg-8">
-                <h3><span>DCB Cashback</span> Savings Account</h3>
-                <p class="pe-lg-5 me-lg-5">Presenting DCB CashBack Savings Account – an account that rewards you with cash back of up to Rs. 6,000 in a financial year for every purchase you make using your DCB CashBack Debit Card.</p>
-                <div class="acc_type_section_btns">
-                    <a class="outline_btn" href="#">Know more</a>
-                    <a class="filled_btn" href="#">Get Started<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z" data-name="Arrow"></path></svg></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="acc_type_section basic_section" id="basicAccount">
-        <div class="row">
-            <div class="col-lg-7">
-                <h3><span>DCB Basic</span> Savings Account</h3>
-                <p>Get started with banking by availing basic banking facilities with this zero balance account, and bank  in an easy and hassle-free way.</p>
-                <div class="acc_type_section_btns">
-                    <a class="outline_btn" href="#">Know more</a>
-                    <a class="filled_btn" href="#">Get Started<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z" data-name="Arrow"></path></svg></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="acc_type_section classic_section" id="classicAccount">
-        <div class="row justify-content-end">
-            <div class="col-lg-7">
-                <h3><span>DCB Classic</span> Savings Account</h3>
-                <p>Presenting DCB Classic Savings Account - easy to  maintain and loaded with benefits. With a minimum balance requirement of only Rs. 5,000, this account helps you transact freely.</p>
-                <div class="acc_type_section_btns">
-                    <a class="outline_btn" href="#">Know more</a>
-                    <a class="filled_btn" href="#">Get Started<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z" data-name="Arrow"></path></svg></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="mb-4 pb-5"></div>
-</div>
-<!-- Account Type Section Ends -->
-
-<!-- Account Compare Starts -->
-<section class="account_compare_section">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="title">
-                    <h2>Compare Savings Accounts</h2>
-                    <p class="pe-5 me-5">Experience maximum convenience and get superior returns with DCB Zippi Online Fixed Deposit.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="acc_compare_table">
-            <div class="table-responsive">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th scope="col">Key Features</th>
-                            <th scope="col">
-                                <select name="" id="">
-                                    <option value="">Elite Savings Account</option>
-                                    <option value="">Premium Savings Account</option>
-                                    <option value="">Privilage Savings Account</option>
-                                    <option value="">Cashback Savings Account</option>
-                                    <option value="">Basic Savings Account</option>
-                                    <option value="">Classic Savings Account</option>
-                                </select>
-                            </th>
-                            <th scope="col">
-                                <select name="" id="">
-                                    <option value="">Elite Savings Account</option>
-                                    <option value="">Premium Savings Account</option>
-                                    <option value="">Privilage Savings Account</option>
-                                    <option value="">Cashback Savings Account</option>
-                                    <option value="">Basic Savings Account</option>
-                                    <option value="">Classic Savings Account</option>
-                                </select>
-                            </th>
-                            <th scope="col">
-                                <select name="" id="">
-                                    <option value="">Elite Savings Account</option>
-                                    <option value="">Premium Savings Account</option>
-                                    <option value="">Privilage Savings Account</option>
-                                    <option value="">Cashback Savings Account</option>
-                                    <option value="">Basic Savings Account</option>
-                                    <option value="">Classic Savings Account</option>
-                                </select>
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><span>Average Quaterly Balance</span></td>
-                            <td>INR 10,000</td>
-                            <td>INR 25,000</td>
-                            <td>INR 50,000</td>
-                        </tr>
-                        <tr>
-                            <td><span>Debit Card Fee</span></td>
-                            <td>INR 250</td>
-                            <td>INR 500</td>
-                            <td>Free</td>
-                        </tr>
-                        <tr>
-                            <td><span>ATM Access</span></td>
-                            <td>5 Free Transaction</td>
-                            <td>10 Free Transaction</td>
-                            <td>25 Free Transaction</td>
-                        </tr>
-                        <tr>
-                            <td><span>Cheque Book</span></td>
-                            <td>Free</td>
-                            <td>Free</td>
-                            <td>Free</td>
-                        </tr>
-                        <tr>
-                            <td><span>Mobile Banking App</span></td>
-                            <td>Free</td>
-                            <td>Free</td>
-                            <td>Free</td>
-                        </tr>
-                        <tr>
-                            <td><span>Internet Banking</span></td>
-                            <td>Free</td>
-                            <td>Free</td>
-                            <td>Free</td>
-                        </tr>
-                        <tr>
-                            <td><span>Cash Withdrawal Fee</span></td>
-                            <td>INR 100 Per Transaction</td>
-                            <td>INR 50 Per Transaction</td>
-                            <td>Free</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Account Compare Ends -->
+<!-- Locate Ends -->
 
 <!-- Footer Starts -->
 <footer>

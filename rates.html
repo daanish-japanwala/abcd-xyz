@@ -1,0 +1,1414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DCB Bank</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Header Starts -->
+<header>
+    <div class="mobile_menu">
+        <div class="m_top_nav">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt=""></a>
+            </div>
+            <div class="right_side_m">
+                <div class="m_user">
+                    <a href="javascript:;">
+                        <img class="before_active" src="images/user.png" alt="">
+                        <img class="after_active" src="images/user-active.png" alt="">
+                    </a>
+                </div>
+                <div class="m_search">
+                    <a href="javascript:;">
+                        <img class="before_active" src="images/m-search.png" alt="">
+                        <img class="after_active" src="images/m-search-active.png" alt="">
+                    </a>
+                </div>
+                <div class="menu_wrapper">
+                    <div class="hamburger_menu"></div>
+                </div>
+            </div>
+        </div>
+        <div class="m_login_box" id="mobileLoginBox">
+            <!-- Appending HTML -->
+        </div>
+        <div class="m_search_box" id="mobileSearchBox">
+            <!-- Appending HTML -->
+        </div>
+    </div>
+    <div class="top_header">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="row align-items-center">
+                    <div class="col-lg-4">
+                        <div class="logo">
+                            <a href="index.html"><img src="images/logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="search_box">
+                            <input type="text" name="Search" placeholder="Search for DCB Products, Services & More...">
+                            <a href="#"><img src="images/search.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="top_header_links">
+                    <ul id="topHeaderLinks">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">CSR</a></li>
+                        <li><a href="rates.html">Rates</a></li>
+                        <li><a href="locate.html">Locate Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="search_container" id="searchDD">
+            <div class="m_search_bar">
+                <input type="text" name="Search" placeholder="Search">
+                <a href="#"><img src="images/search.png" alt=""></a>
+            </div>
+            <div class="popular_search">
+                <ul>
+                    <li><a class="filled_btn" href="#">Mobile banking</a></li>
+                    <li><a class="filled_btn" href="#">Gold loan</a></li>
+                    <li><a class="filled_btn" href="#">DCB Remit</a></li>
+                    <li><a class="filled_btn" href="#">Email Statement</a></li>
+                    <li><a class="filled_btn" href="#">Fixed Deposit</a></li>
+                    <li><a class="filled_btn" href="#">DCB ZIPPI</a></li>
+                    <li><a class="filled_btn" href="#">News & Blog</a></li>
+                </ul>
+            </div>
+            <div class="search_links_ad">
+                <div class="row">
+                    <div class="col-lg-7 col-md-6 pe-lg-5">
+                        <div class="search_links">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <ul class="search_p_r">
+                                        <li>
+                                            <a href="#">Open Bank Account <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z" data-name="Arrow"/></svg></a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Apply for Loan <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z" data-name="Arrow"/></svg></a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Invest Money <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z" data-name="Arrow"/></svg></a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Buy Insurance <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z" data-name="Arrow"/></svg></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6">
+                                    <ul class="search_p_l">
+                                        <li>
+                                            <a href="#">About DCB <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z" data-name="Arrow"/></svg></a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Generate Pin <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z" data-name="Arrow"/></svg></a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Redeem Offers & Discounts <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z" data-name="Arrow"/></svg></a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Contact DCB <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z" data-name="Arrow"/></svg></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-6 ps-lg-5">
+                        <div class="search_ad">
+                            <a href="#"><img src="images/ad-banner.jpg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="secondary_nav" id="secondaryNav">
+        <div class="container">
+            <ul>
+                <li class="sub_nav">
+                    <a href="#">Accounts</a><span class="m_nav_arrow"></span>
+                    <div class="sub_nav_dd">
+                        <div class="row">
+                            <div class="col-lg-7 pe-lg-5 menu_accordion">
+                                <div class="secondary_nav_links">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <ul>
+                                                <li>
+                                                    <a href="saving-account.html">DCB Savings Account</a>
+                                                    <span></span>
+                                                    <div class="menu_accordion_content">
+                                                        <ul>
+                                                            <li><a href="#">Classic DCB Bank Saving Account</a></li>
+                                                            <li><a href="#">DCB Elite Savings Account</a></li>
+                                                            <li><a href="#">DCB Premium Savings Account</a></li>
+                                                            <li><a href="#">DCB Privilage Savings Account</a></li>
+                                                            <li><a href="#">DCB Cashback Savings Account</a></li>
+                                                            <li><a href="#">DCB Basic Savings  Bank Deposit Account</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a href="#">DCB Current Account</a>
+                                                    <span></span>
+                                                    <div class="menu_accordion_content">
+                                                        <ul>
+                                                            <li><a href="#">Test</a></li>
+                                                            <li><a href="#">Test</a></li>
+                                                            <li><a href="#">Test</a></li>
+                                                            <li><a href="#">Test</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a href="#">DCB Institutional Account</a>
+                                                    <span></span>
+                                                    <div class="menu_accordion_content">
+                                                        <ul>
+                                                            <li><a href="#">Test</a></li>
+                                                            <li><a href="#">Test</a></li>
+                                                            <li><a href="#">Test</a></li>
+                                                            <li><a href="#">Test</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 ps-lg-5">
+                                <div class="secondary_nav_ad">
+                                    <a href="#"><img src="images/ad-banner.jpg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="sub_nav">
+                    <a href="#">Deposits</a><span class="m_nav_arrow"></span>
+                    <div class="sub_nav_dd">
+                        <div class="row">
+                            <div class="col-lg-7 pe-lg-5 menu_accordion">
+                                <div class="secondary_nav_links">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <ul class="menu_p_r">
+                                                <li>
+                                                    <a href="#">Open Fixed Deposit</a>
+                                                    <span class="full"></span>
+                                                    <div class="menu_accordion_content">
+                                                        <ul>
+                                                            <li><a href="#">Test</a></li>
+                                                            <li><a href="#">Test</a></li>
+                                                            <li><a href="#">Test</a></li>
+                                                            <li><a href="#">Test</a></li>
+                                                            <li><a href="#">Test</a></li>
+                                                            <li><a href="#">Test</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Fixed</a>
+                                                    <span></span>
+                                                    <div class="menu_accordion_content">
+                                                        <ul>
+                                                            <li><a href="#">Test</a></li>
+                                                            <li><a href="#">Test</a></li>
+                                                            <li><a href="#">Test</a></li>
+                                                            <li><a href="#">Test</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Tax Saver</a>
+                                                    <span></span>
+                                                    <div class="menu_accordion_content">
+                                                        <ul>
+                                                            <li><a href="#">Test</a></li>
+                                                            <li><a href="#">Test</a></li>
+                                                            <li><a href="#">Test</a></li>
+                                                            <li><a href="#">Test</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Daimond Khushiyali</a>
+                                                    <span></span>
+                                                    <div class="menu_accordion_content">
+                                                        <ul>
+                                                            <li><a href="#">Test</a></li>
+                                                            <li><a href="#">Test</a></li>
+                                                            <li><a href="#">Test</a></li>
+                                                            <li><a href="#">Test</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a href="#">ZIPPI Online Fixed Deposit</a>
+                                                    <span></span>
+                                                    <div class="menu_accordion_content">
+                                                        <ul>
+                                                            <li><a href="#">Test</a></li>
+                                                            <li><a href="#">Test</a></li>
+                                                            <li><a href="#">Test</a></li>
+                                                            <li><a href="#">Test</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <ul class="menu_p_l">
+                                                <li>
+                                                    <a href="#">Deposit Rates</a>
+                                                    <span></span>
+                                                    <div class="menu_accordion_content">
+                                                        <ul>
+                                                            <li><a href="#">Test</a></li>
+                                                            <li><a href="#">Test</a></li>
+                                                            <li><a href="#">Test</a></li>
+                                                            <li><a href="#">Test</a></li>
+                                                            <li><a href="#">Test</a></li>
+                                                            <li><a href="#">Test</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Health Plus Fixed Deposit</a>
+                                                    <span></span>
+                                                    <div class="menu_accordion_content">
+                                                        <ul>
+                                                            <li><a href="#">Test</a></li>
+                                                            <li><a href="#">Test</a></li>
+                                                            <li><a href="#">Test</a></li>
+                                                            <li><a href="#">Test</a></li>
+                                                            <li><a href="#">Test</a></li>
+                                                            <li><a href="#">Test</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 ps-lg-5">
+                                <div class="secondary_nav_ad">
+                                    <a href="#"><img src="images/ad-banner.jpg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">Loans</a><span class="m_nav_arrow"></span></li>
+                <li><a href="#">NRI</a><span class="m_nav_arrow"></span></li>
+                <li><a href="#">SME</a><span class="m_nav_arrow"></span></li>
+                <li><a href="#">Investments</a><span class="m_nav_arrow"></span></li>
+                <li><a href="#">Insuarance</a><span class="m_nav_arrow"></span></li>
+                <li class="login_btn">
+                    <a href="#">Login</a>
+                    <div class="sub_nav_dd login_nav_dd" id="loginDD">
+                        <div class="secondary_nav_links">
+                            <ul>
+                                <li><a href="#">DCB Personal Internet Banking<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z" data-name="Arrow"/></svg></a></li>
+                                <li><a href="#">DCB Business Internet Banking<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z" data-name="Arrow"/></svg></a></li>
+                                <li><a href="#">DCB Remit<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z" data-name="Arrow"/></svg></a></li>
+                                <li><a href="#">DCB EazyBee Mutual Fund<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z" data-name="Arrow"/></svg></a></li>
+                                <li><a href="#">DCB Zippi Fixed Deposit<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z" data-name="Arrow"/></svg></a></li>
+                                <li><a href="#">My Documents<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z" data-name="Arrow"/></svg></a></li>
+                                <li><a href="#">Repay Loan and Dues<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z" data-name="Arrow"/></svg></a></li>
+                                <li><a href="#">Self Service Kiosk<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z" data-name="Arrow"/></svg></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="m_top_header_links" id="mobileTopHeaderLinks">
+            <!-- Appending HTML -->
+        </div>
+    </div>
+</header>
+<div class="clearHeight"></div>
+<!-- Header Ends -->
+
+<!-- Inner Banner Starts -->
+<section class="hero_banner inner_hero_banner">
+    <div class="hero_slider_box">
+        <div class="hero_content_box">
+            <div class="container">
+                <div class="hero_content">
+                    <h2>Rates</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+            </div>
+        </div>
+        <picture>
+            <source media="(max-width: 767px)" srcset="images/m-inner-banner.jpg">
+            <img src="images/inner-banner.jpg" alt="" title="">
+        </picture>
+    </div>
+</section>
+<!-- Inner Banner Ends -->
+
+<!-- Account Types Btn Starts -->
+<section class="acc_type_btns alt_tabs">
+    <div class="container">
+        <div class="acc_type_btns_box">
+            <div class="row" role="tablist">
+                <div class="col-lg-4 col-6">
+                    <a class="scrollBtn active" href="javascript:;" data-bs-toggle="tab" data-bs-target="#depositRatesTab">
+                        <span>
+                            <img src="images/deposit.png" alt="">
+                            <img src="images/deposit-active.png" alt="">
+                        </span>
+                        <span>Deposit Rates</span>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-6">
+                    <a class="scrollBtn" href="javascript:;" data-bs-toggle="tab" data-bs-target="#benchmarkTabs">
+                        <span>
+                            <img src="images/lending.png" alt="">
+                            <img src="images/lending-active.png" alt="">
+                        </span>
+                        <span>Benchmark Lending Rates</span>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <a class="scrollBtn" href="javascript:;" data-bs-toggle="tab" data-bs-target="#forexRatesTab">
+                        <span>
+                            <img src="images/forex.png" alt="">
+                            <img src="images/forex-active.png" alt="">
+                        </span>
+                        <span>Forex Rates</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="account_compare_section bg-transparent">
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="depositRatesTab">
+                    <div class="rates_accordion">
+                        <div class="dcb_accordion">
+                            <h3>Savings</h3>
+                            <div class="accordion mb-5" id="ratesAccordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#ratesCollapseOne">Resident, NRE and NRO Savings Bank Account</button>
+                                    </h2>
+                                    <div id="ratesCollapseOne" class="accordion-collapse collapse" data-bs-parent="#ratesAccordion">
+                                        <div class="accordion-body">
+                                            <div class="acc_compare_table holiday_table mt-0">
+                                                <div class="table-responsive">
+                                                    <table>
+                                                        <tr>
+                                                            <th class="full" colspan="2">Resident, NRE and NRO Savings Bank Account Interest rates <span class="smtxt">(with effect from August 22, 2022)</span></th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Balance Range (INR)</th>
+                                                            <th>Rate of Interest p.a. W.E.F August 22, 2022</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>On balances up to 1 lakh in the account</td>
+                                                            <td>2.25%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>On balances above 1 lakh to less than 2 lakh in the account</td>
+                                                            <td>4.00%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>On balances from 2 lakh to less than 5 lakh in the account</td>
+                                                            <td>5.00%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>On balances from 5 lakh to less than 10 lakh in the account</td>
+                                                            <td>6.00%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>On balances from 10 lakh to less than 25 lakh in the account</td>
+                                                            <td>6.75%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><strong>On balances from 25 lakh to less than 2 Crore in the account</strong></td>
+                                                            <td><strong>7.00%</strong></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>On balances from 2 cr to less than 50 crore in the account</td>
+                                                            <td>5.50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>On balances from 50 crore and above</td>
+                                                            <td>5.00%</td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                                
+                                                <div class="table-responsive">
+                                                    <table class="mt-5">
+                                                        <tr>
+                                                            <th class="full"><strong>Important Terms and Conditions</strong></th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Interest will be calculated daily based on end of day clear balance in the account and will be paid quarterly.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Rates mentioned are applicable for the incremental balances that are present corresponding to the amount slabs mentioned.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>These interest rates are applicable to resident, NRE and NRO savings accounts, and subject to change without prior notice.</td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#ratesCollapseTwo">Resident Fixed Deposit Interest Rates</button>
+                                    </h2>
+                                    <div id="ratesCollapseTwo" class="accordion-collapse collapse" data-bs-parent="#ratesAccordion">
+                                        <div class="accordion-body">
+                                            <div class="acc_compare_table holiday_table mt-0">
+                                                <div class="table-responsive">
+                                                    <table>
+                                                        <tr>
+                                                            <th class="full" colspan="6">Resident Indian Fixed Deposit Interest Rates <span class="smtxt">(with effect from 21<sup>st</sup> December, 2022)</span></th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td rowspan="2"><strong>Tenure</strong></td>
+                                                            <td><strong>Deposit Interest Rate <br>
+                                                            (percent per annum) </strong></td>
+                                                            <td rowspan="2"><strong>Effective Annualised Yield (% per annum) *</strong></td>
+                                                            <td rowspan="2"><strong>Rate for Senior Citizens (% per annum)</strong></td>
+                                                            <td rowspan="2"><strong>Effective Annualised Yield (% per annum) *</strong></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Single Deposit of less than INR 2 Cr.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>7 days to 14 days</td>
+                                                            <td>3.75%</td>
+                                                            <td>3.75%</td>
+                                                            <td>4.25%</td>
+                                                            <td>4.25%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>15 days to 45 days</td>
+                                                            <td>3.75%</td>
+                                                            <td>3.75%</td>
+                                                            <td>4.25%</td>
+                                                            <td>4.25%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>46 days to 90 days</td>
+                                                            <td>4.00%</td>
+                                                            <td>4.00%</td>
+                                                            <td>4.50%</td>
+                                                            <td>4.50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>91 days to less than 6 months</td>
+                                                            <td>4.75%</td>
+                                                            <td>4.75%</td>
+                                                            <td>5.25%</td>
+                                                            <td>5.25%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>6 months to less than 12 months</td>
+                                                            <td>6.25%</td>
+                                                            <td>6.34%</td>
+                                                            <td>6.75%</td>
+                                                            <td>6.86%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>12 months</td>
+                                                            <td>7.25%</td>
+                                                            <td>7.45%</td>
+                                                            <td>7.75%</td>
+                                                            <td>7.98%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>More than 12 months to less than 15 months</td>
+                                                            <td>7.25%</td>
+                                                            <td>7.45%</td>
+                                                            <td>7.75%</td>
+                                                            <td>7.98%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>15 months to less than 18 months</td>
+                                                            <td>7.25%</td>
+                                                            <td>7.52%</td>
+                                                            <td>7.75%</td>
+                                                            <td>8.06%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><strong>18 months to less than 700 days</strong></td>
+                                                            <td><strong>7.50%</strong></td>
+                                                            <td><strong>7.94%</strong></td>
+                                                            <td><strong>8.00%</strong></td>
+                                                            <td><strong>8.50%</strong></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><strong>700 days</strong></td>
+                                                            <td><strong>7.50%</strong></td>
+                                                            <td><strong>7.94%</strong></td>
+                                                            <td><strong>8.00%</strong></td>
+                                                            <td><strong>8.50%</strong></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><strong>More than 700 days to less than 36 months</strong></td>
+                                                            <td><strong>7.85%</strong></td>
+                                                            <td><strong>8.67%</strong></td>
+                                                            <td><strong>8.35%</strong></td>
+                                                            <td><strong>9.28%</strong></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><b>36 months </b></td>
+                                                            <td><strong>7.85%</strong></td>
+                                                            <td><strong>8.76%</strong></td>
+                                                            <td><strong>8.35%</strong></td>
+                                                            <td><strong>9.38%</strong></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><b>More than 36 months to 60 months</b></td>
+                                                            <td><strong>7.60%</strong></td>
+                                                            <td><strong>9.14%</strong></td>
+                                                            <td><strong>8.10%</strong></td>
+                                                            <td><strong>9.86%</strong></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><b>More than 60 months to 120 months</b></td>
+                                                            <td><strong>7.60%</strong></td>
+                                                            <td><strong>11.23%</strong></td>
+                                                            <td><strong>8.10%</strong></td>
+                                                            <td><strong>12.30%</strong></td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3>Fixed Deposit</h3>
+                            <div class="accordion mb-5" id="ratesAccordionTwo">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#ratesCollapseThree">NRE FD (Non Resident External Fixed Deposit) Interest Rates</button>
+                                    </h2>
+                                    <div id="ratesCollapseThree" class="accordion-collapse collapse" data-bs-parent="#ratesAccordionTwo">
+                                        <div class="accordion-body">
+                                            <div class="acc_compare_table holiday_table mt-0">
+                                                <div class="table-responsive">
+                                                    <table>
+                                                        <tr>
+                                                            <th class="full" colspan="6">NRE FD (Non Resident External Fixed Deposit) Interest Rates <span class="smtxt">(with effect from 21<sup>st</sup> December, 2022)</span></th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td rowspan="2"><strong>Tenure</strong></td>
+                                                            <td><strong>Deposit Interest Rate <br>(% per annum)</strong></td>
+                                                            <td colspan="3" rowspan="2"><strong>Effective Annualised Yield (% per annum) *</strong></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Single Deposit of less than INR 2 Cr.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>12 months</td>
+                                                            <td>7.25%</td>
+                                                            <td>7.45%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>More than 12 months to less than 15 months</td>
+                                                            <td>7.25%</td>
+                                                            <td>7.45%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>15 months to less than 18 months</td>
+                                                            <td>7.25%</td>
+                                                            <td>7.52%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>18 months to less than 700 days</td>
+                                                            <td>7.50%</td>
+                                                            <td>7.94%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>700 days</td>
+                                                            <td>7.50%</td>
+                                                            <td>7.94%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>More than 700 days to 36 month</td>
+                                                            <td>7.85%</td>
+                                                            <td>8.76%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>More than 36 months to 60 months</td>
+                                                            <td>7.60%</td>
+                                                            <td>9.14%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>More than 60 months to 120 months</td>
+                                                            <td>7.60%</td>
+                                                            <td>11.23%</td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+
+                                                <div class="table-responsive">
+                                                    <table class="mt-5">
+                                                        <tr>
+                                                            <th class="full" colspan="6"><strong>Penalty for Premature Closure of NRE Deposits</strong></th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><strong>Size of Deposit</strong></td>
+                                                            <td><strong>Less than 1 year</strong></td>
+                                                            <td><strong>1 year or more</strong></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Less than INR 2 crore</td>
+                                                            <td>No Interest</td>
+                                                            <td>0.50% less than the applicable rate</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>INR 2 crore and above</td>
+                                                            <td>No Interest</td>
+                                                            <td>2% less than the applicable rate</td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+
+                                                <div class="table-responsive">
+                                                    <table class="mt-5">
+                                                        <tr>
+                                                            <th class="full"><strong>Important Terms and Conditions</strong></th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Rates of Interest are subject to revision without notice</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>There is no additional benefit to NR Senior Citizen</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Bank Treasury approval is required for "interest rate quotes and booking" for single deposit of INR 2 Cr. and above</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>*Annualised yield is calculated on the assumption of quarterly compounding frequency and for highest tenure in each slab</td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#ratesCollapseFour">NRO FD (Non Resident Ordinary Fixed Deposit) Interest Rates</button>
+                                    </h2>
+                                    <div id="ratesCollapseFour" class="accordion-collapse collapse" data-bs-parent="#ratesAccordionTwo">
+                                        <div class="accordion-body">
+                                            <div class="acc_compare_table holiday_table mt-0">
+                                                <div class="table-responsive">
+                                                    <table>
+                                                        <tr>
+                                                            <th class="full" colspan="6">NRO FD (Non Resident Ordinary Fixed Deposit) Interest Rates <span class="smtxt">(with effect from 21<sup>st</sup> December, 2022)</span></th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td rowspan="2"><strong>Tenure</strong></td>
+                                                            <td><strong>Deposit Interest Rate <br>
+                                                            (% per annum)</strong></td>
+                                                            <td colspan="3" rowspan="2"><strong>Effective Annualised Yield (% per annum) *</strong></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Single Deposit of less than INR 2 Cr.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>7 days to 14 days</td>
+                                                            <td>3.75%</td>
+                                                            <td>3.75%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>15 days to 45 days</td>
+                                                            <td>3.75%</td>
+                                                            <td>3.75%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>46 days to 90 days</td>
+                                                            <td>4.00%</td>
+                                                            <td>4.00%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>91 days to less than 6 months</td>
+                                                            <td>4.75%</td>
+                                                            <td>4.75%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>6 Months to less than 12 months</td>
+                                                            <td>6.25%</td>
+                                                            <td>6.34%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>12 months</td>
+                                                            <td>7.25%</td>
+                                                            <td>7.45%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>More than 12 months to less than 15 months</td>
+                                                            <td>7.25%</td>
+                                                            <td>7.45%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>15 months to less than 18 months</td>
+                                                            <td>7.25%</td>
+                                                            <td>7.52%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>18 months to less than 700 days</td>
+                                                            <td>7.50%</td>
+                                                            <td>7.94%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><strong>700 days</strong></td>
+                                                            <td><strong>7.50%</strong></td>
+                                                            <td><strong>7.94%</strong></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>More than 700 days to 36 months</td>
+                                                            <td>7.85%</td>
+                                                            <td>8.76%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><strong>More than 36 months to 60 months</strong></td>
+                                                            <td><strong>7.60%</strong></td>
+                                                            <td><strong>9.14%</strong></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><strong>More than 60 months to 120 months</strong></td>
+                                                            <td><strong>7.60%</strong></td>
+                                                            <td><strong>11.23%</strong></td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                                
+                                                <div class="table-responsive">
+                                                    <table class="mt-5">
+                                                        <tr>
+                                                            <th class="full" colspan="6"><strong>Penalty for Premature Closure of NRO Deposits</strong></th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><strong>Size of Deposit</strong></td>
+                                                            <td><strong>7 - 13 days</strong></td>
+                                                            <td><strong>14 - 29 days</strong></td>
+                                                            <td><strong>30 days &amp; above</strong></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Less than INR 2 crore</td>
+                                                            <td>No Interest</td>
+                                                            <td>0.50% less than the applicable rate</td>
+                                                            <td>0.50% less than the applicable rate</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>INR 2 crore and above</td>
+                                                            <td>No Interest</td>
+                                                            <td>No Interest</td>
+                                                            <td>2% less than the applicable rate</td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                                
+                                                <div class="table-responsive">
+                                                    <table class="mt-5">
+                                                        <tr>
+                                                            <th class="full"><strong>Important Terms and Conditions</strong></th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Rates of Interest are subject to revision without notice</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>There is no additional benefit to NR Senior Citizen</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Bank Treasury approval is required for interest rate quotes and booking for single deposit of Rs.2 crore and above</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>*Annualised yield is calculated on the assumption of quarterly compounding frequency and for highest tenure in each slab</td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <h3>FCNR</h3>
+                            <div class="accordion" id="ratesAccordionThree">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#ratesCollapseFive">FCNR (B) Deposit Interest Rates Per Annum</button>
+                                    </h2>
+                                    <div id="ratesCollapseFive" class="accordion-collapse collapse" data-bs-parent="#ratesAccordionThree">
+                                        <div class="accordion-body">
+                                            <div class="acc_compare_table holiday_table mt-0">
+                                                <div class="table-responsive">
+                                                    <table class="mb-5">
+                                                        <tr>
+                                                            <th class="full" colspan="6">FCNR (B) Deposit Interest Rates Per Annum <span class="smtxt">(with effect from 21<sup>st</sup> December, 2022)</span></th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><strong>Currency</strong></td>
+                                                            <td><strong>1 year and above but less than 2 years</strong></td>
+                                                            <td><strong>2 years and above but less than 3 years</strong></td>
+                                                            <td><strong>3 years to less than 4 years</strong></td>
+                                                            <td><strong>4 years to less than 5 years</strong></td>
+                                                            <td><strong>5 years</strong></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>USD</td>
+                                                            <td>5.75%</td>
+                                                            <td>5.75%</td>
+                                                            <td>3.50%</td>
+                                                            <td>3.50%</td>
+                                                            <td>3.50%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>GBP</td>
+                                                            <td>2.75%</td>
+                                                            <td>2.75%</td>
+                                                            <td>2.75%</td>
+                                                            <td>2.75%</td>
+                                                            <td>2.75%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>EUR</td>
+                                                            <td>0.75%</td>
+                                                            <td>0.75%</td>
+                                                            <td>0.75%</td>
+                                                            <td>0.75%</td>
+                                                            <td>0.75%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>AUD</td>
+                                                            <td>2.75%</td>
+                                                            <td>2.75%</td>
+                                                            <td>2.75%</td>
+                                                            <td>2.75%</td>
+                                                            <td>2.75%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>CAD</td>
+                                                            <td>3.00%</td>
+                                                            <td>3.00%</td>
+                                                            <td>3.00%</td>
+                                                            <td>3.00%</td>
+                                                            <td>2.80%</td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                                
+                                                <p class="mb-3">*Subject to ceiling of ARR rates relevant for the period</p>
+                                                <p>Note: DCB RFC Deposit is available from 1 to 3 years duration in the permitted foreign currencies USD, GBP, EUR, AUD and CAD . Interest rates on DCB RFC deposits are similar to FCNR deposits of equivalent duration/ tenor and currency.</p>
+                                                
+                                                <div class="table-responsive">
+                                                    <table class="mt-5">
+                                                        <tr>
+                                                            <th class="full"><strong>Important Terms and Conditions</strong></th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Any deposit for USD, GBP, EUR, CAD or AUD amount equivalent to or more than INR 2 Crore will considered as bulk deposit and the interest rates mentioned above are applicable to deposit amount less than INR 2 Crore equivalent in USD, GBP, EUR, CAD or AUD. For bulk deposit interest rates please contact nri@dcbbank.com .</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>There is no additional benefit to NR Senior Citizen</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Referring to the subsections (1) and (5) of Section 26(A) of the Banking Regulation Act, 1949 and Foreign Exchange Management (Crystallization of Inoperative Foreign Currency Deposits) Regulations, 2014 dated 21-03-2014, RBI has advised AD - Banks to convert the credit balances in any inoperative foreign currency denominated deposit into Indian Rupee, in the manner indicated below :</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>In case a foreign currency denominated deposit with a fixed maturity date remains inoperative for a period of three years from the date of maturity of the deposit, at the end of the third year, the authorised bank shall convert the balances lying in the foreign currency denominated deposit into Indian Rupee at the exchange rate prevailing as on that date. Thereafter, the depositor shall be entitled to claim either the said Indian Rupee proceeds and interest thereon, if any, or the foreign currency equivalent (calculated at the rate prevalent as on the date of payment) of the Indian Rupee proceeds of the original deposit and interest, if any, on such Indian Rupee proceeds.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>In case of foreign currency denominated deposit with no fixed maturity period, if the deposit remains inoperative for a period of three years (debit of bank charges not to be reckoned as operation), the authorised bank shall, after giving a three month notice to the depositor at his last known address as available with it, convert the deposit from the foreign currency in which it is denominated to Indian Rupee at the end of the notice period at the prevailing exchange rate. Thereafter, the depositor shall be entitled to claim either the said Indian Rupee proceeds and interest thereon, if any, or the foreign currency equivalent (calculated at the rate prevalent as on the date of payment) of the Indian Rupee proceeds of the original deposit and interest, if any, on such Indian Rupee proceeds.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>No interest will be paid on FCNR deposits prematurely withdrawn before completion of one year.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>FCNR deposits (opened / renewed prior to 1st October, 2021) prematurely withdrawn after completion of one year will attract penalty of 1%. <br>
+                                                            FCNR deposits (opened/ renewed on or after 1st October, 2021) prematurely withdrawn after completion of one year will attract penalty of 0.5%.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Penal interest and premature withdrawal charges for RFC Deposits shall be similar to FCNR deposit of equivalent tenor and currency.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>FCNR Deposit interest rates are compounded half yearly.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>The FCNR (B) deposit interest rates are subject to change and the interest rate prevailing on the day of processing the FCNR deposit booking will be applied.</td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="benchmarkTabs">
+                    <div class="acc_compare_table holiday_table mt-0">
+                        <div class="table-responsive">
+                            <table class="mb-2">
+                                <tr>
+                                    <th colspan="2">Benchmark Lending Rates (w.e.f. June 10, 2017)</th>
+                                </tr>
+                                <tr>
+                                    <td>DCB Base Rate (w.e.f. 12  December, 2022)</td>
+                                    <td>9.80%</td>
+                                </tr>
+                                <tr>
+                                    <td>DCB Benchmark Prime Lending Rate (BPLR)</td>
+                                    <td>17.69%</td>
+                                </tr>
+                                <tr>
+                                    <td>DCB Mortgage Prime Lending Rate (MPLR)</td>
+                                    <td>17.44%</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <p class="mb-4"><span class="smtxt">These rates are subject to revision without prior notice.</span></p>
+
+                        <p><strong>MCLR with effect from January 06</strong><b>, 2023</b></p>
+                        <div class="table-responsive">
+                            <table class="mt-2">
+                                <tr>
+                                    <th>Sl. No.</th>
+                                    <th>Benchmark Tenor</th>
+                                    <th>MCLR</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Overnight MCLR</td>
+                                    <td>9.96%</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>One Month MCLR</td>
+                                    <td>10.02%</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Three Months MCLR</td>
+                                    <td>10.17%</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Six Months MCLR</td>
+                                    <td>10.40%</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>One Year MCLR</td>
+                                    <td>10.61%</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <p class="mt-2"><span class="smtxt">These rates are subject to revision without prior notice.</span></p>
+
+                        <div class="table-responsive">
+                            <table class="mt-4">
+                                <tr>
+                                    <th class="full" colspan="2">EBLR Rate (w.e.f. December 12, 2022)</th>
+                                </tr>
+                                <tr>
+                                    <td>External Benchmark Linked Rate  (EBLR)</td>
+                                    <td>10.69%</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <p class="mt-2 mb-4"><span class="smtxt">*External Benchmark Linked Rate (EBLR) for the Bank is linked to Reserve Bank of India Policy Repo Rate.</span></p>
+
+                        <p class="mb-2"><b>EBLR-HL Rate with effect from December 12, 2022</b></p>
+                        <div class="table-responsive">
+                            <table class="mb-4">
+                                <tr>
+                                    <th width="225">Benchmark </th>
+                                    <th width="100">Rate </th>
+                                </tr>
+                                <tr>
+                                    <td class="tdbg">External Benchmark Linked Rate- Home Loan  (EBLR-HL)</td>
+                                    <td>10.41%</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <p class="mb-2"><strong>Revised Benchmark Lending Rate (RBLR) - festival offer for new home loan customers. Offer valid from December 13, 2022, to June 30, 2023<sup>$</sup></strong></p>
+
+                        <div class="table-responsive">
+                            <table class="mb-2">
+                                <tr>
+                                    <th>Benchmark</th>
+                                    <th>Rate</th>
+                                </tr>
+                                <tr>
+                                    <td>Revised Benchmark Lending Rate- Home Loan (RBLR- HL)</td>
+                                    <td>9.50%</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <p class="mb-2"><span class="smtxt">*External Benchmark Linked Rate (EBLR-HL) and Revised Benchmark Lending Rate (RBLR) for the Bank is linked to Reserve Bank of India Policy Repo Rate.</span></p>
+                        <p class="mb-2"><span class="smtxt">$ The Bank reserves the right to change the offer period.</span></p>
+                        <p>
+                            <span class="smtxt">All Floating rate term loans are allowed to switch to External Benchmark with reasonable administrative / legal cost.</span><br>
+                            <span class="smtxt">All interested customers are requested to contact DCB Customer Care on 022 6899 7777 / 040 6815 7777 or write to us on loans@dcbbank.com</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="forexRatesTab">
+                    <div class="acc_compare_table holiday_table mt-0">
+                        <div class="table-responsive">
+                            <table>
+                                <tr>
+                                    <th class="full" colspan="10">Foreign-Exchange rate schedule for spot transactions (valid for transactions upto Rs. 6,00,000 equivalent in any currency) Rates updated as on 06-January-2023</th>
+                                </tr>
+                                <tr>
+                                    <td> </td>
+                                    <td> </td>
+                                    <td colspan="2"><strong>TT</strong></td>
+                                    <td colspan="2">
+                                        <div><strong>Bills</strong></div>
+                                    </td>
+                                    <td colspan="2">
+                                        <div><strong>Travel Card</strong></div>
+                                    </td>
+                                    <td colspan="2">
+                                        <div><strong>CN</strong></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Units</strong></td>
+                                    <td><strong>Currency</strong></td>
+                                    <td><strong>Sell</strong></td>
+                                    <td><strong>Buy</strong></td>
+                                    <td><strong>Sell</strong></td>
+                                    <td><strong>Buy</strong></td>
+                                    <td><strong>Sell</strong></td>
+                                    <td><strong>Buy</strong></td>
+                                    <td><strong>Sell</strong></td>
+                                    <td><strong>Buy</strong></td>
+                                </tr> 
+                                <tr>
+                                    <td>1</td>
+                                    <td>USD</td>
+                                    <td>83.65</td>
+                                    <td>81.83</td>
+                                    <td>84.03</td>
+                                    <td>81.46</td>
+                                    <td>85.35</td>
+                                    <td>80.15</td>
+                                    <td>85.45</td>
+                                    <td>80.05</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>SGD</td>
+                                    <td>62.33</td>
+                                    <td>60.49</td>
+                                    <td>62.7</td>
+                                    <td>60.13</td>
+                                    <td>63.6</td>
+                                    <td>59.25</td>
+                                    <td>63.7</td>
+                                    <td>59.15</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>SAR</td>
+                                    <td>22.34</td>
+                                    <td>21.68</td>
+                                    <td>22.45</td>
+                                    <td>21.57</td>
+                                    <td>22.8</td>
+                                    <td>21.25</td>
+                                    <td>22.85</td>
+                                    <td>21.2</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>NOK</td>
+                                    <td>8.2</td>
+                                    <td>7.92</td>
+                                    <td>8.24</td>
+                                    <td>7.88</td>
+                                    <td>8.4</td>
+                                    <td>7.75</td>
+                                    <td>8.45</td>
+                                    <td>7.7</td>
+                                </tr>
+                                <tr>
+                                    <td>100</td>
+                                    <td>JPY</td>
+                                    <td>62.29</td>
+                                    <td>60.81</td>
+                                    <td>62.69</td>
+                                    <td>60.41</td>
+                                    <td>63.55</td>
+                                    <td>59.55</td>
+                                    <td>63.65</td>
+                                    <td>59.45</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>GBP</td>
+                                    <td>99.11</td>
+                                    <td>97.4</td>
+                                    <td>99.51</td>
+                                    <td>97.01</td>
+                                    <td>101.1</td>
+                                    <td>95.45</td>
+                                    <td>101.2</td>
+                                    <td>95.35</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>EUR</td>
+                                    <td>87.78</td>
+                                    <td>86.13</td>
+                                    <td>88.13</td>
+                                    <td>85.79</td>
+                                    <td>89.55</td>
+                                    <td>84.4</td>
+                                    <td>89.65</td>
+                                    <td>84.3</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>DKK</td>
+                                    <td>11.9</td>
+                                    <td>11.49</td>
+                                    <td>11.97</td>
+                                    <td>11.42</td>
+                                    <td>12.15</td>
+                                    <td>11.25</td>
+                                    <td>12.2</td>
+                                    <td>11.2</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>CHF</td>
+                                    <td>89</td>
+                                    <td>87.15</td>
+                                    <td>89.53</td>
+                                    <td>86.63</td>
+                                    <td>90.8</td>
+                                    <td>85.4</td>
+                                    <td>90.9</td>
+                                    <td>85.3</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>CAD</td>
+                                    <td>61.61</td>
+                                    <td>59.91</td>
+                                    <td>61.98</td>
+                                    <td>59.55</td>
+                                    <td>62.85</td>
+                                    <td>58.7</td>
+                                    <td>62.95</td>
+                                    <td>58.6</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>AUD</td>
+                                    <td>56.62</td>
+                                    <td>54.94</td>
+                                    <td>56.96</td>
+                                    <td>54.61</td>
+                                    <td>57.75</td>
+                                    <td>53.8</td>
+                                    <td>57.85</td>
+                                    <td>53.75</td>
+                                </tr>     
+                                <tr>
+                                    <td>1</td>
+                                    <td>AED</td>
+                                    <td>22.86</td>
+                                    <td>22.19</td>
+                                    <td>23</td>
+                                    <td>22.06</td>
+                                    <td>23.35</td>
+                                    <td>21.75</td>
+                                    <td>23.4</td>
+                                    <td>21.7</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Account Types Btn Ends -->
+
+<!-- Footer Starts -->
+<footer>
+    <div class="top_footer">
+        <div class="container">
+            <div class="row d-lg-flex d-block">
+                <div class="col">
+                    <div class="footer_links">
+                        <h5><a href="#">Products</a></h5>
+                        <ul>
+                            <li><a href="#">Accounts</a></li>
+                            <li><a href="#">Deposit</a></li>
+                            <li><a href="#">Loans</a></li>
+                            <li><a href="#">NRI</a></li>
+                            <li><a href="#">SME</a></li>
+                            <li><a href="#">Invest</a></li>
+                            <li><a href="#">Insurance</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="footer_links">
+                        <h5>Support</h5>
+                        <ul>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Press Room</a></li>
+                            <li><a href="#">Banking Safety Tips</a></li>
+                            <li><a href="holidays.html">Holidays</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Customer Corner</a></li>
+                            <li><a href="#">Disclaimer</a></li>
+                            <li><a href="#">Forms</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="footer_links">
+                        <h5>Quick Links</h5>
+                        <ul>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Press Room</a></li>
+                            <li><a href="#">Banking Safety Tips</a></li>
+                            <li><a href="holidays.html">Holidays</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Customer Corner</a></li>
+                            <li><a href="#">Disclaimer</a></li>
+                            <li><a href="#">Forms</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="footer_links">
+                        <h5>Important</h5>
+                        <ul>
+                            <li><a href="#">SMS Facility</a></li>
+                            <li><a href="#">Correspondent Banks</a></li>
+                            <li><a href="#">Key Financials</a></li>
+                            <li><a href="#">Discounts & Offers</a></li>
+                            <li><a href="#">Disclosures</a></li>
+                            <li><a href="#">RBI Advisory</a></li>
+                            <li><a href="#">Service Charges</a></li>
+                            <li><a href="#">Complaints Redressal Form</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="footer_links">
+                        <h5 class="border-0 mb-lg-3 mb-0"><a href="#">Customer Care</a></h5>
+                        <ul>
+                            <li class="mb-4">
+                                <p><b>For NRI</b></p>
+                                <div class="position-relative">
+                                    <a href="tel:022 61271000"><img src="images/call.png" alt="">022 61271000</a>
+                                </div>
+                                <div class="position-relative">
+                                    <a href="mailto:nri@dcbbank.com"><img src="images/mail.png" alt="">nri@dcbbank.com</a>
+                                </div>
+                            </li>
+                            <li>
+                                <p><b>For Resident Indians</b></p>
+                                <div class="position-relative">
+                                    <a href="#"><img src="images/call.png" alt="">022 68997777</a> <span>/</span> <a class="p-0" href="tel:040 68157777">040 68157777</a>
+                                </div>
+                                <div class="position-relative">
+                                    <a href="mailto:nri@dcbbank.com"><img src="images/mail.png" alt="">customercare@dcbbank.com</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="download_footer">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <p><b>Download our apps</b></p>
+                        <div class="app_store_btns">
+                            <a href="#"><img src="images/google-play.png" alt=""></a>
+                            <a href="#"><img src="images/app-store.png" alt=""></a>
+                        </div>
+                        <div class="bank_app_btns">
+                            <a href="#">DCB Mobile Banking App <img src="images/download.png" alt=""></a>
+                            <a href="#">DCB ZIPPI + App <img src="images/download.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="social_icons">
+                            <p><b>Follow us on</b></p>
+                            <div>
+                                <a href="#"><img src="images/facebook.png" alt=""></a>
+                                <a href="#"><img src="images/linkedin.png" alt=""></a>
+                                <a href="#"><img src="images/instagram.png" alt=""></a>
+                                <a href="#"><img src="images/twitter.png" alt=""></a>
+                                <a href="#"><img src="images/youtube.png" alt=""></a>
+                                <a href="#"><img src="images/whatsapp.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom_footer">
+        <p>Copyright © DCB Bank 2022. All rights reserved.</p>
+    </div>
+</footer>
+<!-- Footer Ends -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/header.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/range.js"></script>
+</body>
+</html>

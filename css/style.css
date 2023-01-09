@@ -1363,6 +1363,9 @@ header .secondary_nav .m_top_header_links {
     padding-right: 0;
   }
 }
+.hero_banner.inner_hero_banner .hero_slider_box .hero_content_box .hero_content p {
+  color: #fff;
+}
 
 /************ Floating Banner ************/
 .floating_banner_section {
@@ -2657,22 +2660,22 @@ header .secondary_nav .m_top_header_links {
 .acc_type_btns .acc_type_btns_box a span img:last-child {
   display: none;
 }
-.acc_type_btns .acc_type_btns_box a:hover {
+.acc_type_btns .acc_type_btns_box a:hover, .acc_type_btns .acc_type_btns_box a.active {
   color: #0f248b;
 }
-.acc_type_btns .acc_type_btns_box a:hover::after {
+.acc_type_btns .acc_type_btns_box a:hover::after, .acc_type_btns .acc_type_btns_box a.active::after {
   bottom: -20px;
   opacity: 1;
 }
 @media only screen and (max-width: 1600px) {
-  .acc_type_btns .acc_type_btns_box a:hover::after {
+  .acc_type_btns .acc_type_btns_box a:hover::after, .acc_type_btns .acc_type_btns_box a.active::after {
     bottom: -10px;
   }
 }
-.acc_type_btns .acc_type_btns_box a:hover span img:first-child {
+.acc_type_btns .acc_type_btns_box a:hover span img:first-child, .acc_type_btns .acc_type_btns_box a.active span img:first-child {
   display: none;
 }
-.acc_type_btns .acc_type_btns_box a:hover span img:last-child {
+.acc_type_btns .acc_type_btns_box a:hover span img:last-child, .acc_type_btns .acc_type_btns_box a.active span img:last-child {
   display: inline-block;
 }
 
@@ -2937,6 +2940,7 @@ header .secondary_nav .m_top_header_links {
 }
 .account_compare_section .acc_compare_table table {
   width: 100%;
+  background: #fff;
 }
 .account_compare_section .acc_compare_table table th,
 .account_compare_section .acc_compare_table table td {
@@ -2979,12 +2983,8 @@ header .secondary_nav .m_top_header_links {
 }
 @media only screen and (max-width: 1600px) {
   .account_compare_section .acc_compare_table table th select {
-    font-size: 16px;
+    font-size: 15px;
     padding: 15px 40px 15px 12px;
-  }
-}
-@media only screen and (max-width: 1600px) {
-  .account_compare_section .acc_compare_table table th select {
     text-overflow: ellipsis;
   }
 }
@@ -3023,6 +3023,11 @@ header .secondary_nav .m_top_header_links {
   padding: 15px;
   font-weight: bold;
 }
+.account_compare_section .acc_compare_table.holiday_table table th.full {
+  text-align: center;
+  color: #fff;
+  background: #0f248b;
+}
 .account_compare_section .acc_compare_table.holiday_table table tr td {
   padding: 15px;
   vertical-align: top;
@@ -3051,12 +3056,19 @@ header .secondary_nav .m_top_header_links {
 }
 .dcb_accordion .accordion .accordion-item .accordion-header .accordion-button {
   font-size: 22px;
+  font-weight: bold;
   padding: 40px 60px;
 }
 @media only screen and (max-width: 1600px) {
   .dcb_accordion .accordion .accordion-item .accordion-header .accordion-button {
     font-size: 18px;
-    padding: 20px;
+    padding: 20px 40px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .dcb_accordion .accordion .accordion-item .accordion-header .accordion-button {
+    font-size: 15px;
+    padding: 15px 20px;
   }
 }
 .dcb_accordion .accordion .accordion-item .accordion-header .accordion-button:focus {
@@ -3064,12 +3076,12 @@ header .secondary_nav .m_top_header_links {
   box-shadow: none;
 }
 .dcb_accordion .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
-  color: #fff;
-  background: #0f248b;
+  color: #0f248b;
+  background: transparent;
   box-shadow: none;
 }
 .dcb_accordion .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
-  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230f248b'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
 }
 .dcb_accordion .accordion .accordion-item .accordion-body {
   border-top: 1px solid rgb(233, 233, 233);
@@ -3077,7 +3089,12 @@ header .secondary_nav .m_top_header_links {
 }
 @media only screen and (max-width: 1600px) {
   .dcb_accordion .accordion .accordion-item .accordion-body {
-    padding: 30px;
+    padding: 30px 40px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .dcb_accordion .accordion .accordion-item .accordion-body {
+    padding: 20px;
   }
 }
 
@@ -3156,10 +3173,6 @@ header .secondary_nav .m_top_header_links {
 }
 
 /*********** Locator ****************/
-.locator_section {
-  padding: 0 0 5%;
-  margin-top: -60px;
-}
 .locator_section .card_section_tabs {
   margin-top: 0;
 }
@@ -3173,6 +3186,11 @@ header .secondary_nav .m_top_header_links {
 .locator_section .card_section_tabs .card_section_tabs_content .locator_tab_div .locator_dd {
   margin-bottom: 50px;
 }
+@media only screen and (max-width: 767px) {
+  .locator_section .card_section_tabs .card_section_tabs_content .locator_tab_div .locator_dd {
+    margin-bottom: 20px;
+  }
+}
 .locator_section .card_section_tabs .card_section_tabs_content .locator_tab_div .locator_dd select {
   width: 100%;
   padding: 15px 20px;
@@ -3180,15 +3198,26 @@ header .secondary_nav .m_top_header_links {
   border-radius: 10px;
   font-size: 20px;
   font-weight: 500;
-  background: url("../images/dd-arrow.png") no-repeat center right 20px;
+  background: url("../images/dd-arrow.png") no-repeat center right 20px #fff;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 .locator_section .card_section_tabs .card_section_tabs_content .locator_tab_div .locator_dd select:hover, .locator_section .card_section_tabs .card_section_tabs_content .locator_tab_div .locator_dd select:focus {
   border: 1px solid #0f248b;
 }
+@media only screen and (max-width: 1600px) {
+  .locator_section .card_section_tabs .card_section_tabs_content .locator_tab_div .locator_dd select {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .locator_section .card_section_tabs .card_section_tabs_content .locator_tab_div .locator_dd select {
+    margin-bottom: 20px;
+  }
+}
 .locator_section .card_section_tabs .card_section_tabs_content .locator_tab_div .locator_result table {
   width: 100%;
+  background: #fff;
 }
 .locator_section .card_section_tabs .card_section_tabs_content .locator_tab_div .locator_result table th,
 .locator_section .card_section_tabs .card_section_tabs_content .locator_tab_div .locator_result table td {
@@ -3201,6 +3230,7 @@ header .secondary_nav .m_top_header_links {
   .locator_section .card_section_tabs .card_section_tabs_content .locator_tab_div .locator_result table th,
 .locator_section .card_section_tabs .card_section_tabs_content .locator_tab_div .locator_result table td {
     font-size: 15px;
+    padding: 10px 20px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -3215,6 +3245,57 @@ header .secondary_nav .m_top_header_links {
 }
 .locator_section .card_section_tabs .card_section_tabs_content .locator_tab_div .locator_result table tr td {
   vertical-align: top;
+}
+.locator_section .card_section_tabs .card_section_tabs_content .locator_tab_div .locator_result.atm_cards {
+  background: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  height: 100%;
+}
+@media only screen and (max-width: 1600px) {
+  .locator_section .card_section_tabs .card_section_tabs_content .locator_tab_div .locator_result.atm_cards {
+    padding: 20px;
+  }
+}
+
+.rates_accordion h3 {
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+@media only screen and (max-width: 1600px) {
+  .rates_accordion h3 {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .rates_accordion h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+}
+
+.smtxt {
+  font-size: 14px;
+}
+
+/************************************/
+.alt_tabs .acc_type_btns_box {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media only screen and (max-width: 1600px) {
+  .alt_tabs .acc_type_btns_box {
+    max-width: 750px;
+  }
+}
+.alt_tabs .acc_type_btns_box.locate_tabs {
+  max-width: 700px;
+}
+@media only screen and (max-width: 1600px) {
+  .alt_tabs .acc_type_btns_box.locate_tabs {
+    max-width: 450px;
+  }
 }
 
 /************* Footer ***************/
